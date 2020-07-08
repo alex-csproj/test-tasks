@@ -83,7 +83,7 @@ namespace TestTasks.Robots.Tests.Parse
             IArea result = sut.Parse(area);
 
             // Assert
-            var expectedResult = new RectangularArea(Position.Origin, new Position(1, 2));
+            RectangularArea expectedResult = new RectangularArea(Position.Origin, new Position(1, 2));
             result.Should().Be(expectedResult);
         }
     }
