@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTasks.Robots", "TestTas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTasks.Robots.Tests", "TestTasks.Robots.Tests\TestTasks.Robots.Tests.csproj", "{628682E7-C532-4C6B-8F00-3C876494F7A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTasks.Robots.Demo", "TestTasks.Robots.Demo\TestTasks.Robots.Demo.csproj", "{04157B00-762F-4809-9F2F-54D04C37702A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{628682E7-C532-4C6B-8F00-3C876494F7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{628682E7-C532-4C6B-8F00-3C876494F7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{628682E7-C532-4C6B-8F00-3C876494F7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04157B00-762F-4809-9F2F-54D04C37702A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04157B00-762F-4809-9F2F-54D04C37702A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04157B00-762F-4809-9F2F-54D04C37702A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04157B00-762F-4809-9F2F-54D04C37702A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
