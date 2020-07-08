@@ -2,7 +2,7 @@
 using FluentAssertions;
 using System;
 using TestTasks.Robots.Command;
-using TestTasks.Robots.Contracts;
+using TestTasks.Robots.Contract;
 using Xunit;
 
 namespace TestTasks.Robots.Tests.Command

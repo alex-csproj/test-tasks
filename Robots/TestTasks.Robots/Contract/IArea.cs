@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TestTasks.Robots.Contracts
+namespace TestTasks.Robots.Contract
 {
     public interface IArea
     {

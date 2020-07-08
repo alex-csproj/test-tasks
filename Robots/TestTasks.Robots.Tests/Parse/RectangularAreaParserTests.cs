@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
 using System;
-using TestTasks.Robots.Contracts;
+using TestTasks.Robots.Contract;
 using TestTasks.Robots.Parse;
 using Xunit;
 

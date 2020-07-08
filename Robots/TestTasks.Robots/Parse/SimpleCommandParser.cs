@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TestTasks.Robots.Command;
-using TestTasks.Robots.Contracts;
+using TestTasks.Robots.Contract;
 
 namespace TestTasks.Robots.Parse
 {

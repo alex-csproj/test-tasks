@@ -1,4 +1,4 @@
-﻿using TestTasks.Robots.Contracts;
+﻿using TestTasks.Robots.Contract;
 
 namespace TestTasks.Robots.Command
 {

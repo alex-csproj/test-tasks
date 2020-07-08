@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using TestTasks.Robots.Contracts;
+using TestTasks.Robots.Contract;
 
 namespace TestTasks.Robots
 {

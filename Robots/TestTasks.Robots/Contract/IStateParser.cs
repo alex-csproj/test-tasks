@@ -1,4 +1,4 @@
-﻿namespace TestTasks.Robots.Contracts
+﻿namespace TestTasks.Robots.Contract
 {
     public interface IStateParser
     {
