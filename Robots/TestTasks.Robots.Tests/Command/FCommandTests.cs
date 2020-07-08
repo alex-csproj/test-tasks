@@ -55,8 +55,7 @@ namespace TestTasks.Robots.Tests.Command
 
             // Assert
             robot.Orientation.Should().Be(orientation);
-            robot.LastPosition.X.Should().Be(x);
-            robot.LastPosition.Y.Should().Be(y);
+            robot.LastPosition.Should().Be(new Position(x, y));
         }
     }
 }
