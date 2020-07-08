@@ -29,6 +29,22 @@ namespace TestTasks.Robots
                    position.Y <= UpperRight.Y;
         }
 
+        public override bool Equals(object obj) =>
+            obj is RectangularArea area &&
+            LowerLeft.Equals(area.LowerLeft) &&
+            UpperRight.Equals(area.UpperRight);
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                var hash = 17;
+                hash = 23 * hash + LowerLeft.GetHashCode();
+                hash = 23 * hash + UpperRight.GetHashCode();
+                return hash;
+            }
+        }
+
         public override string ToString() =>
             $"{LowerLeft} - {UpperRight}";
     }
