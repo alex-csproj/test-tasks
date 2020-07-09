@@ -21,7 +21,7 @@ namespace TestTasks.FileDownloader
         private readonly string root;
 
         public SlowFileDownloader(ILocationProvider locationProvider) =>
-            root = locationProvider.Location;
+            root = Path.GetFullPath(locationProvider.Location);
 
         public FileResult Download(string file) =>
             DownloadAsync(file).Result;
@@ -31,7 +31,11 @@ namespace TestTasks.FileDownloader
             if (file == null)
                 throw new ArgumentNullException(nameof(file));
 
-            var path = Path.Combine(root, file);
+            var path = Path.GetFullPath(Path.Combine(root, file));
+
+            if (!path.StartsWith(root))
+                throw new InvalidOperationException("Access to directory is denied");
+
             var extension = Path.GetExtension(path).ToLowerInvariant();
 
             if (!mimeTypes.TryGetValue(extension, out var contentType))
