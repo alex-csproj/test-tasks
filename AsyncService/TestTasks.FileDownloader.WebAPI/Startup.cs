@@ -11,9 +11,9 @@ namespace TestTasks.FileDownloader.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<ILocationProvider, ContentRootProvider>();
-            services.AddTransient<IFileDownloader, SlowFileDownloader>();
-            services.AddTransient<IDownloadManager, DownloadManager>();
+            services.AddSingleton<ILocationProvider, ContentRootProvider>();
+            services.AddSingleton<IFileDownloader, SlowFileDownloader>();
+            services.AddSingleton<IDownloadManager, DownloadManager>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
