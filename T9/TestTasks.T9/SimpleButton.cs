@@ -13,14 +13,12 @@ namespace TestTasks.T9
 
         public SimpleButton(char label, IEnumerable<char> symbols)
         {
-            if (symbols == null)
-                throw new ArgumentNullException(nameof(symbols));
+            var _symbols = symbols?.ToArray() ?? throw new ArgumentNullException(nameof(symbols));
 
-            Symbols = symbols.ToArray();
-
-            if (Symbols.Distinct().Count() != Symbols.Count)
+            if (_symbols.Distinct().Count() != _symbols.Length)
                 throw new ArgumentException($"Duplicates are not allowed in '{nameof(symbols)}'.");
 
+            Symbols = _symbols;
             Label = label;
         }
     }

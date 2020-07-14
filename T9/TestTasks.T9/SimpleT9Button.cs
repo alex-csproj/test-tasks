@@ -17,16 +17,10 @@ namespace TestTasks.T9
         {
             this.button = button ?? throw new ArgumentNullException(nameof(button));
 
-            var symbols = Symbols.ToList();
-            pressCount = symbols.ToDictionary(symbol => symbol, symbol => symbols.IndexOf(symbol) + 1);
+            pressCount = Symbols.ToDictionary(symbol => symbol, symbol => Symbols.IndexOf(symbol) + 1);
         }
 
-        public int GetPressCount(char symbol)
-        {
-            if (pressCount.TryGetValue(symbol, out var count))
-                return count;
-
-            return -1;
-        }
+        public int GetPressCount(char symbol) =>
+            pressCount.TryGetValue(symbol, out var count) ? count : -1;
     }
 }

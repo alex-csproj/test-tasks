@@ -18,7 +18,7 @@ namespace TestTasks.T9
 
             var sb = new StringBuilder();
 
-            IT9Button prevButton = null;
+            IT9Button prevButton = default;
             foreach (var symbol in text)
             {
                 var button = keypad.GetButton(symbol);
